@@ -5,45 +5,20 @@
     "homepage": "https://github.com/silverstripe/recipe-kitchen-sink",
     "license": "BSD-3-Clause",
     "require": {
-        "php": "^7.4 || ^8.0",
-        "silverstripe/recipe-plugin": "^1",
-        "silverstripe/installer": "4.x-dev",
-        "silverstripe/recipe-authoring-tools": "1.x-dev",
-        "silverstripe/recipe-blog": "1.x-dev",
-        "silverstripe/recipe-collaboration": "1.x-dev",
-        "silverstripe/recipe-form-building": "1.x-dev",
-        "silverstripe/recipe-reporting-tools": "1.x-dev",
-        "silverstripe/recipe-services": "1.x-dev",
-        "silverstripe/recipe-content-blocks": "2.x-dev",
-        "silverstripe/recipe-solr-search": "2.x-dev",
-        "silverstripe/recipe-ccl": "2.x-dev",
-        "silverstripe/developer-docs": "4.x-dev",
-        "silverstripe/registry": "2.x-dev",
-        "silverstripe/totp-authenticator": "4.x-dev",
-        "silverstripe/mfa": "4.x-dev",
-        "silverstripe/crontask": "2.x-dev",
-        "silverstripe/gridfieldqueuedexport": "2.x-dev",
-        "silverstripe/ldap": "1.x-dev",
-        "silverstripe/textextraction": "3.x-dev",
-        "silverstripe/realme": "4.x-dev",
-        "silverstripe/ckan-registry": "1.x-dev",
-        "silverstripe/webauthn-authenticator": "4.x-dev",
-        "silverstripe/security-extensions": "4.x-dev",
-        "silverstripe/subsites": "2.x-dev",
-        "silverstripe/html5": "2.x-dev",
-        "cwp/starter-theme": "3.x-dev",
-        "cwp/agency-extensions": "2.x-dev",
-        "cwp/watea-theme": "3.x-dev",
-        "cwp/cwp": "2.x-dev",
-        "cwp/cwp-pdfexport": "1.x-dev",
-        "dnadesign/silverstripe-elemental-userforms": "~3.2.1@stable",
-        "symbiote/silverstripe-multivaluefield": "5.x-dev",
-        "tractorcow/silverstripe-fluent": "4.x-dev"
+        "php": "^8.1",
+        "silverstripe/recipe-plugin": "^2",
+        "silverstripe/installer": "5.x-dev",
+        "silverstripe/elemental-bannerblock": "dev-pulls/3/upgrade-cms5 as 3.x-dev",
+        "silverstripe/elemental-fileblock": "dev-pulls/3/upgrade-cms5 as 3.x-dev",
+        "silverstripe/userforms": "dev-pulls/6/upgrade-cms5 as 6.x-dev",
+        "silverstripe/subsites": "dev-pulls/3/upgrade-cs5 as 3.x-dev",
+        "silverstripe/versionfeed": "dev-pulls/3/upgrade-cms5 as 3.x-dev",
+        "silverstripe/mfa": "dev-pulls/5/upgarde-cms5 as 5.x-dev"
     },
     "require-dev": {
-        "silverstripe/frameworktest": "^0.4.6",
-        "silverstripe/graphql-devtools": "1.x-dev",
-        "silverstripe/recipe-testing": "^2",
+        "silverstripe/frameworktest": "^1",
+        "silverstripe/graphql-devtools": "dev-pulls/2/upgrade-cms5 as 2.x-dev",
+        "silverstripe/recipe-testing": "^3",
         "mikey179/vfsstream": "^1.6"
     },
     "extra": {
@@ -53,7 +28,215 @@
         "public-files": [
             "assets/*",
             "favicon.ico"
+        ],
+        "project-files-installed": [
+            ".env.example",
+            ".graphql-generated/_manifest_exclude",
+            ".htaccess",
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/assets.yml",
+            "app/_config/mimevalidator.yml",
+            "app/_config/mysite.yml",
+            "app/_config/theme.yml",
+            "behat.yml",
+            "phpunit.xml.dist"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "assets/.gitignore",
+            "assets/.htaccess",
+            "assets/web.config",
+            "favicon.ico",
+            "index.php",
+            "web.config"
         ]
+    },
+    "repositories": {
+        "x1": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-maintenance"
+        },
+        "x2": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-composer-update-checker"
+        },
+        "x3": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/cwp-agencyextensions"
+        },
+        "x4": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/cwp"
+        },
+        "x5": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/cwp-core"
+        },
+        "x6": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/cwp-search"
+        },
+        "x7": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-elemental-userforms"
+        },
+        "x8": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-elemental-userforms"
+        },
+        "x9": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-debugbar"
+        },
+        "x10": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-debugbar"
+        },
+        "x11": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-activedirectory"
+        },
+        "x12": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-auditor"
+        },
+        "x13": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-blog"
+        },
+        "x14": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-ckan-registry"
+        },
+        "x15": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/comment-notifications"
+        },
+        "x16": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-comments"
+        },
+        "x17": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-widgets"
+        },
+        "x18": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-contentreview"
+        },
+        "x19": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-elemental-bannerblock"
+        },
+        "x20": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-elemental-fileblock"
+        },
+        "x21": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-fulltextsearch"
+        },
+        "x22": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-hybridsessions"
+        },
+        "x23": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-iframe"
+        },
+        "x24": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-ldap"
+        },
+        "x25": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/recipe-authoring-tools"
+        },
+        "x26": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/recipe-blog"
+        },
+        "x27": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/recipe-ccl"
+        },
+        "x28": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/recipe-collaboration"
+        },
+        "x29": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/recipe-content-blocks"
+        },
+        "x30": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/recipe-form-building"
+        },
+        "x31": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/recipe-reporting-tools"
+        },
+        "x32": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/recipe-services"
+        },
+        "x33": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/recipe-solr-search"
+        },
+        "x34": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-securityreport"
+        },
+        "x35": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-sitewidecontent-report"
+        },
+        "x36": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-spamprotection"
+        },
+        "x37": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-spamprotection"
+        },
+        "x38": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-textextraction"
+        },
+        "x39": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-userforms"
+        },
+        "x40": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-versionfeed"
+        },
+        "x41": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-advancedworkflow"
+        },
+        "x42": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-mfa"
+        },
+        "x43": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-webauthn-authenticator"
+        },
+        "x44": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-graphql-devtools"
+        },
+        "x45": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/recipe-solr-search"
+        },
+        "x46": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-subsites"
+        }
     },
     "config": {
         "process-timeout": 600,
@@ -61,6 +244,9 @@
             "composer/installers": true,
             "silverstripe/recipe-plugin": true,
             "silverstripe/vendor-plugin": true
+        },
+        "platform": {
+            "php": "8.1"
         }
     },
     "prefer-stable": true,
