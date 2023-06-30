@@ -1,28 +1,23 @@
 name: CI
-
+ 
 on:
   push:
-  pull_request:
-  workflow_dispatch:
-
+ 
 jobs:
   ci:
     name: CI
     uses: silverstripe/gha-ci/.github/workflows/ci.yml@v1
     with:
-      # Use simple_matrix to limit the number of created jobs
-      # phpunit.xml.dist has a large number of testsuites, all of which are tested with
-      # multiple versions of php + databases in both the modules themselves and other recipes
-      # such as recipe-form-building
-      simple_matrix: true
-      # Also include jobs with the lowest version of PHP with --prefer-lowest and
-      # the highest version of PHP to ensure everything installs
-      # Run recipe-cms testsuite because that's the most likely to have weird conflicts e.g. graphql
+      composer_install: true
+      # installer contains a sample behat.yml file, though there are no behat tests to run
+      endtoend: false
       extra_jobs: |
-        - php: 8.1
-          composer_args: --prefer-lowest
-          phpunit: true
-          phpunit_suite: recipe-cms
-        - php: 8.2
-          phpunit: true
-          phpunit_suite: recipe-cms
+        - endtoend: true
+          endtoend_suite: admin
+          endtoend_config: vendor/silverstripe/admin/behat.yml
+        - endtoend: true
+          endtoend_suite: asset-admin
+          endtoend_config: vendor/silverstripe/asset-admin/behat.yml
+        - endtoend: true
+          endtoend_suite: cms
+          endtoend_config: vendor/silverstripe/cms/behat.yml
