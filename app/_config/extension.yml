@@ -1,0 +1,12 @@
+Page:
+  extensions:
+    - App\Extensions\PageVersionedExtension
+
+SilverStripe\FrameworkTest\Model\Company:
+  extensions:
+    - App\Extensions\CompanyExtension
+
+SilverStripe\FrameworkTest\Model\Employee:
+  extensions:
+    - SilverStripe\Versioned\Versioned
+    - App\Extensions\EmployeeExtension
