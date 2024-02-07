@@ -15,14 +15,11 @@ jobs:
       # multiple versions of php + databases in both the modules themselves and other recipes
       # such as recipe-form-building
       simple_matrix: true
-      # Also include jobs with the lowest version of PHP with --prefer-lowest and
-      # the highest version of PHP to ensure everything installs
-      # Run recipe-cms testsuite because that's the most likely to have weird conflicts e.g. graphql
+      composer_install: true
+      # installer contains a sample behat.yml file, though there are no behat tests to run
+      endtoend: false
+      phpunit: false
       extra_jobs: |
-        - php: 8.1
-          composer_args: --prefer-lowest
-          phpunit: true
-          phpunit_suite: recipe-cms
-        - php: 8.2
-          phpunit: true
-          phpunit_suite: recipe-cms
+        - endtoend: true
+          endtoend_suite: linkfield
+          endtoend_config: vendor/silverstripe/linkfield/behat.yml
