@@ -7251,12 +7251,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/creative-commoners/silverstripe-linkfield.git",
-                "reference": "a19bac6c3dd12f82d11a8deaa73ab9b264a44025"
+                "reference": "7df6170335650ee1a457e50efc849e919018d36c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-linkfield/zipball/a19bac6c3dd12f82d11a8deaa73ab9b264a44025",
-                "reference": "a19bac6c3dd12f82d11a8deaa73ab9b264a44025",
+                "url": "https://api.github.com/repos/creative-commoners/silverstripe-linkfield/zipball/7df6170335650ee1a457e50efc849e919018d36c",
+                "reference": "7df6170335650ee1a457e50efc849e919018d36c",
                 "shasum": ""
             },
             "require": {
@@ -7311,7 +7311,7 @@
             "support": {
                 "source": "https://github.com/creative-commoners/silverstripe-linkfield/tree/pulls/4/behat-accessability-test"
             },
-            "time": "2024-02-16T00:27:04+00:00"
+            "time": "2024-02-16T01:34:07+00:00"
         },
         {
             "name": "silverstripe/login-forms",
