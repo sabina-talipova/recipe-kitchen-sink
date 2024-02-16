@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cef5376db5612cc9ccf046efd1832c3c",
+    "content-hash": "9177814fd5bfecd699474e32e62e1a23",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -15088,23 +15088,24 @@
             "version": "1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/creative-commoners/silverstripe-frameworktest.git",
-                "reference": "936f286e0909db1adafb7157f6cdbdb5abf9ec05"
+                "url": "https://github.com/silverstripe/silverstripe-frameworktest.git",
+                "reference": "f8eac086d24071e33e70da90db20206a19a9a733"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creative-commoners/silverstripe-frameworktest/zipball/936f286e0909db1adafb7157f6cdbdb5abf9ec05",
-                "reference": "936f286e0909db1adafb7157f6cdbdb5abf9ec05",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-frameworktest/zipball/f8eac086d24071e33e70da90db20206a19a9a733",
+                "reference": "f8eac086d24071e33e70da90db20206a19a9a733",
                 "shasum": ""
             },
             "require": {
                 "fzaninotto/faker": "^1.9.2",
-                "guzzlehttp/guzzle": "^7.4.5",
+                "guzzlehttp/guzzle": "^7.5",
                 "php": "^8.1",
                 "silverstripe/cms": "^5",
                 "silverstripe/framework": "^5",
                 "silverstripe/vendor-plugin": "^2"
             },
+            "default-branch": true,
             "type": "silverstripe-vendormodule",
             "extra": {
                 "expose": [
@@ -15118,6 +15119,7 @@
                     "SSilverStripe\\FrameworkTest\\": "code/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -15134,9 +15136,10 @@
                 "testing"
             ],
             "support": {
-                "source": "https://github.com/creative-commoners/silverstripe-frameworktest/tree/1"
+                "issues": "https://github.com/silverstripe/silverstripe-frameworktest/issues",
+                "source": "https://github.com/silverstripe/silverstripe-frameworktest/tree/1"
             },
-            "time": "2022-09-16T02:10:24+00:00"
+            "time": "2024-02-13T01:27:18+00:00"
         },
         {
             "name": "silverstripe/graphql-devtools",

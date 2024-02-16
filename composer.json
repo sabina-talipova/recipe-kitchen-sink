@@ -55,10 +55,6 @@
             "type": "vcs",
             "url": "https://github.com/creative-commoners/silverstripe-linkfield"
         },
-        "x2": {
-            "type": "vcs",
-            "url": "https://github.com/creative-commoners/silverstripe-frameworktest"
-        },
         "x3": {
             "type": "vcs",
             "url": "https://github.com/creative-commoners/silverstripe-behat-extension"
