@@ -44,6 +44,7 @@
         "silverstripe/linkfield": "dev-pulls/4/behat-accessability-test as 4.x-dev"
     },
     "require-dev": {
+        "silverstripe/frameworktest": "^1",
         "silverstripe/behat-extension": "dev-pulls/5/keyboard-test-steps as 5.x-dev",
         "silverstripe/graphql-devtools": "1.x-dev",
         "silverstripe/recipe-testing": "^3",
@@ -55,6 +56,10 @@
             "url": "https://github.com/creative-commoners/silverstripe-linkfield"
         },
         "x2": {
+            "type": "vcs",
+            "url": "https://github.com/creative-commoners/silverstripe-frameworktest"
+        },
+        "x3": {
             "type": "vcs",
             "url": "https://github.com/creative-commoners/silverstripe-behat-extension"
         }
