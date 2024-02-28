@@ -41,23 +41,19 @@
         "colymba/gridfield-bulk-editing-tools": "4.x-dev",
         "tractorcow/silverstripe-fluent": "7.x-dev",
         "silverstripe/dynamodb": "5.x-dev",
-        "silverstripe/linkfield": "dev-pulls/4/behat-accessability-test as 4.x-dev"
+        "silverstripe/linkfield": "4.x-dev"
     },
     "require-dev": {
-        "silverstripe/frameworktest": "^1",
-        "silverstripe/behat-extension": "dev-pulls/5/keyboard-test-steps as 5.x-dev",
+        "silverstripe/frameworktest": "dev-pulls/1/linkfield-regression-test as 1",
+        "silverstripe/behat-extension": "^5.x-dev",
         "silverstripe/graphql-devtools": "1.x-dev",
         "silverstripe/recipe-testing": "^3",
         "mikey179/vfsstream": "^1.6"
     },
     "repositories": {
-        "x1": {
-            "type": "vcs",
-            "url": "https://github.com/creative-commoners/silverstripe-linkfield"
-        },
         "x3": {
             "type": "vcs",
-            "url": "https://github.com/creative-commoners/silverstripe-behat-extension"
+            "url": "https://github.com/creative-commoners/silverstripe-frameworktest"
         }
     },
     "extra": {
